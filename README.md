@@ -41,14 +41,15 @@ A Java Swing-based Student Management System with full CRUD operations, search f
 ## Installation & Setup
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Anbarasan-Baskar/student-management-system.git
-   cd student-management-system
+```bash
+git clone https://github.com/Anbarasan-Baskar/student-management-system.git
+cd student-management-system
+Set up MySQL database:
 
-
-Set up MySQL database:	
-
+sql
+Copy code
 CREATE DATABASE student;
+
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -61,23 +62,22 @@ CREATE TABLE students (
 );
 Add MySQL JDBC Driver:
 
-Download MySQL Connector/J.
-
-Place the .jar file in the lib/ folder.
-
-Add it to your classpath in your IDE or build tool.
-
+text
+Copy code
+- Download MySQL Connector/J from https://dev.mysql.com/downloads/connector/j/
+- Place the .jar file in the lib/ folder
+- Add it to your classpath in your IDE or build tool
 Configure database credentials:
 
-Update the DB_URL, DB_USER, and DB_PASSWORD in StudentManagementSystem.java according to your local setup.
+Update DB_URL, DB_USER, and DB_PASSWORD in StudentManagementSystem.java according to your local setup.
 
 Run the project:
 
+bash
+Copy code
 javac -cp "lib/*" src/StudentManagementSystem.java
 java -cp "lib/*;src/" StudentManagementSystem
-
 Usage
-
 Open the application.
 
 Login with default credentials:
@@ -91,6 +91,8 @@ Use the main dashboard to add, update, delete, or search student records.
 All changes are reflected in the MySQL database.
 
 Folder Structure
+text
+Copy code
 student-management-system/
 │
 ├── src/
@@ -105,4 +107,4 @@ student-management-system/
 │   ├── delete_student.png
 │   ├── search_student.png
 ├── README.md
-
+├── .gitignore
