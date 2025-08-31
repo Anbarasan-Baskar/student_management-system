@@ -46,7 +46,7 @@ A Java Swing-based Student Management System with full CRUD operations, search f
    cd student-management-system
 
 
-Set up MySQL database:
+Set up MySQL database:	
 
 CREATE DATABASE student;
 CREATE TABLE students (
