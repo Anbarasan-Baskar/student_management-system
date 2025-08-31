@@ -59,5 +59,50 @@ CREATE TABLE students (
     contact VARCHAR(20),
     email VARCHAR(255)
 );
+Add MySQL JDBC Driver:
 
+Download MySQL Connector/J.
+
+Place the .jar file in the lib/ folder.
+
+Add it to your classpath in your IDE or build tool.
+
+Configure database credentials:
+
+Update the DB_URL, DB_USER, and DB_PASSWORD in StudentManagementSystem.java according to your local setup.
+
+Run the project:
+
+javac -cp "lib/*" src/StudentManagementSystem.java
+java -cp "lib/*;src/" StudentManagementSystem
+
+Usage
+
+Open the application.
+
+Login with default credentials:
+
+Username: admin
+
+Password: admin
+
+Use the main dashboard to add, update, delete, or search student records.
+
+All changes are reflected in the MySQL database.
+
+Folder Structure
+student-management-system/
+│
+├── src/
+│   └── StudentManagementSystem.java
+├── lib/
+│   └── mysql-connector-java-9.4.0.jar
+├── screenshots/
+│   ├── login_page.png
+│   ├── main_dashboard.png
+│   ├── add_student.png
+│   ├── update_student.png
+│   ├── delete_student.png
+│   ├── search_student.png
+├── README.md
 
