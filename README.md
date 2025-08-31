@@ -22,7 +22,7 @@ A Java Swing-based Student Management System with full CRUD operations, search f
 ![Login Page](screenshots/login_page.png)
 
 **Main Dashboard**  
-![Main Dashboard](screenshots/main_dashboard.png)
+![Main Dashboard](screenshots/main_page.png)
 
 **Add Student**  
 ![Add Student](screenshots/add_student.png)
@@ -42,7 +42,7 @@ A Java Swing-based Student Management System with full CRUD operations, search f
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/anbarasanbaskar/student-management-system.git
+   git clone https://github.com/Anbarasan-Baskar/student-management-system.git
    cd student-management-system
 
 
